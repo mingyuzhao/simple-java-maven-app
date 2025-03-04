@@ -17,5 +17,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the application...'
+            }
+        }
     }
 }
